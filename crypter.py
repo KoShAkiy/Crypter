@@ -15,7 +15,7 @@ def crypt_and_decrypt(crypt_or_decrypt,file): # Функция для шифро
         elif crypt_or_not == 0:
             typefile = input('Напиши тип файла: ')
             try:
-                pyAesCrypt.decryptFile(file, bezrashireniy[0]+'.'+typefile, password, buffer) # Тут все то же самое
+                pyAesCrypt.decryptFile(file, bezrashireniy[0]+'.'+typefile, password, buffer) 
 
             except FileNotFoundError and ValueError:
                 print('Дешифровка не вышла')
